@@ -32,6 +32,7 @@ class HomePage extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 26,
+            fontFamily: 'Anton-Regular',
           ),
         ),
         centerTitle: true,
@@ -82,6 +83,7 @@ Widget textItem(String text) {
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 22,
+          fontFamily: 'ArchitectsDaughter',
         ),
       ),
       Icon(Icons.arrow_forward_ios, size: 20),
