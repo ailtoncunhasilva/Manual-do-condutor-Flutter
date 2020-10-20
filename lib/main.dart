@@ -31,8 +31,8 @@ class HomePage extends StatelessWidget {
           'Guia do futuro',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 26,
-            fontFamily: 'ArchitectsDaughter',
+            fontSize: 22,
+            //fontFamily: 'ArchitectsDaughter',
           ),
         ),
         centerTitle: true,
