@@ -28,46 +28,96 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Guia do futuro condutor',
+          'Guia do futuro',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 26,
-            fontFamily: 'Anton-Regular',
+            fontFamily: 'ArchitectsDaughter',
           ),
         ),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Expanded(
-              child: Container(
-                padding: EdgeInsets.all(12),
-                child: ListView(
-                  children: [
-                    textItem('Legislação de Trânsito'),
-                    Divider(height: 18),
-                    textItem('Direção Defensiva'),
-                    Divider(height: 18),
-                    textItem('Mecânica Básica'),
-                    Divider(height: 18),
-                    textItem('Meio Ambiente e Cidadania'),
-                    Divider(height: 18),
-                    textItem('Primeiros Socorros'),
-                  ],
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.all(8),
+          child: Column(
+            children: [
+              Container(
+                height: 80,
+                width: MediaQuery.of(context).size.width * 1.4,
+                color: Colors.yellow[700],
+                child: Center(
+                  child: Text(
+                    'CONDUTOR',
+                    style: TextStyle(
+                      fontSize: 54,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Anton-Regular',
+                    ),
+                  ),
                 ),
               ),
-            ),
-            Expanded(
-              child: Container(
-                padding: EdgeInsets.all(16),
-                child: Card(
-                  child: Text('texto ainda a digitar'),
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(12),
+                  child: ListView(
+                    children: [
+                      InkWell(
+                        child: textItem('Legislação de Trânsito'),
+                        onTap: () {},
+                      ),
+                      Divider(height: 18),
+                      InkWell(
+                        child: textItem('Direção Defensiva'),
+                        onTap: () {},
+                      ),
+                      Divider(height: 18),
+                      InkWell(
+                        child: textItem('Mecânica Básica'),
+                        onTap: () {},
+                      ),
+                      Divider(height: 18),
+                      InkWell(
+                        child: textItem('Meio Ambiente e Cidadania'),
+                        onTap: () {},
+                      ),
+                      Divider(height: 18),
+                      InkWell(
+                        child: textItem('Primeiros Socorros'),
+                        onTap: () {},
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+              Expanded(
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 1.2,
+                  padding: EdgeInsets.all(16),
+                  child: Card(
+                    elevation: 8,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    margin: EdgeInsets.all(16),
+                    color: Colors.green[800],
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Center(
+                        child: Text(
+                          'Atualizado com a Lei 13.804, de 10 de janeiro/2019, que instituiu importantes mudanças no CTB (Código de Trânsito Brasileiro), prevendo a suspensão do direito de dirigir e a cassação da CNH do agente, quando for comprovada a utilização de veículo para fins da prática de contrabando, receptação e descaminho',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
