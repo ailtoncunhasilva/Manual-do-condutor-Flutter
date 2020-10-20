@@ -46,13 +46,13 @@ class HomePage extends StatelessWidget {
                 child: ListView(
                   children: [
                     textItem('Legislação de Trânsito'),
-                    Divider(height: 16),
+                    Divider(height: 18),
                     textItem('Direção Defensiva'),
-                    Divider(height: 16),
+                    Divider(height: 18),
                     textItem('Mecânica Básica'),
-                    Divider(height: 16),
+                    Divider(height: 18),
                     textItem('Meio Ambiente e Cidadania'),
-                    Divider(height: 16),
+                    Divider(height: 18),
                     textItem('Primeiros Socorros'),
                   ],
                 ),
@@ -74,19 +74,17 @@ class HomePage extends StatelessWidget {
 }
 
 Widget textItem(String text) {
-  return GestureDetector(
-      child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          text,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 22,
-          ),
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      Text(
+        text,
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
         ),
-        Icon(Icons.arrow_forward_ios, size: 20),
-      ],
-    ),
+      ),
+      Icon(Icons.arrow_forward_ios, size: 20),
+    ],
   );
 }
