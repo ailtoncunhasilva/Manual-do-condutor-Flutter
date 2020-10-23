@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:legislacao_transito/contents/content_legislacao.dart';
 
 class LegislacaoPage extends StatelessWidget {
   @override
@@ -9,6 +10,7 @@ class LegislacaoPage extends StatelessWidget {
         title: Text('Legislação de Trânsito'),
         centerTitle: true,
       ),
+      body: ConteudoLegislacao(),
     );
   }
 }
