@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Guia do futuro',
+                        'Guia do Futuro',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 22,
@@ -136,7 +136,7 @@ class HomePage extends StatelessWidget {
                       padding: const EdgeInsets.all(12),
                       child: Center(
                         child: Text(
-                          'Atualizado com a Lei 13.804, de 10 de janeiro/2019, que instituiu importantes mudanças no CTB (Código de Trânsito Brasileiro), prevendo a suspensão do direito de dirigir e a cassação da CNH do agente, quando for comprovada a utilização de veículo para fins da prática de contrabando, receptação e descaminho',
+                          'Já atualizado com a Lei 13.804, de 10 de janeiro/2019, que instituiu importantes mudanças no CTB(Código de Trânsito Brasileiro), prevendo a suspensão do direito de dirigir e a cassação da CNH do agente, quando for comprovada a utilização de veículo para fins da prática de contrabando, receptação e descaminho.',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
